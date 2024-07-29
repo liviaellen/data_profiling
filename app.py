@@ -6,6 +6,7 @@ import time
 from io import StringIO
 import sys
 import os
+st.set_page_config(layout="wide")
 
 # Function to load data
 def load_data(file):
