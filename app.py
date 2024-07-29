@@ -40,7 +40,13 @@ ch.setLevel(logging.INFO)
 logger.addHandler(ch)
 
 def main():
-    st.title("Data Profiling with Streamlit")
+    st.title("Data Profiling")
+    st.text("This app uses the pandas-profiling library to generate a profile report for your data.")
+    url="https://github.com/liviaellen/data-profiling"
+    git_url="https://github.com/liviaellen/data-profiling"
+    github_code= f'<a href="{git_url}" target="_blank">GitHub Code</a>'
+
+    st.write("Created with 💙 by [Livia Ellen](%s)" % url)
 
     st.write("Upload your CSV or JSON file for profiling")
     uploaded_file = st.file_uploader("Choose a file", type=["csv", "json"])
