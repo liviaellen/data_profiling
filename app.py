@@ -40,7 +40,7 @@ ch.setLevel(logging.INFO)
 logger.addHandler(ch)
 
 def main():
-    st.title("Data Profiling")
+    st.title("Data Profiling - Livia Ellen")
     st.text("This app uses the pandas-profiling library to generate a profile report for your data.")
     url="https://github.com/liviaellen/data-profiling"
     git_url="https://github.com/liviaellen/data-profiling"
