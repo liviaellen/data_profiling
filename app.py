@@ -49,7 +49,7 @@ def main():
     st.write("Find the code [here](%s)" % git_url)
 
     result_url="https://liviaellen.github.io/data_profiling/report.html"
-    st.write("This is an [output sample from the profiling report](%s)" % result_url")
+    st.write("This is an [output sample from the profiling report](%s)" % result_url)
 
     st.write("**Upload your CSV or JSON file for profiling**")
     uploaded_file = st.file_uploader("Choose a file", type=["csv", "json"])
