@@ -44,21 +44,16 @@ def main():
     st.title("Data Profiling - Livia Ellen")
     st.text("This app uses the pandas-profiling library to generate a profile report for your data.")
     url="https://github.com/liviaellen/data-profiling"
-    git_url="https://github.com/liviaellen/data-profiling"
+    git_url="https://github.com/liviaellen/data_profiling"
     st.write("Created with 💙 by [Livia Ellen](%s)" % url)
     st.write("Find the code [here](%s)" % git_url)
 
+    result_url="https://liviaellen.github.io/data_profiling/report.html"
+    st.write("This is an [output sample from the profiling report](%s)" % result_url")
 
     st.write("**Upload your CSV or JSON file for profiling**")
     uploaded_file = st.file_uploader("Choose a file", type=["csv", "json"])
-    # st.write("This is a sample of result from the profiling report")
-    # # Provide link to open in new tab
-    # sample_report_file_name="report.html"
-    # st.markdown(f'<a href="{sample_report_file_name}" target="_blank">Open HTML report in new tab</a>', unsafe_allow_html=True)
 
-    # # Show the report in Streamlit
-    # sample_report_html=open(sample_report_file_name, "r")
-    # st_profile_report(sample_report_html)
 
     if uploaded_file is not None:
         data = load_data(uploaded_file)
